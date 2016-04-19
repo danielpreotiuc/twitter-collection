@@ -8,9 +8,7 @@ This is a set of Python scripts that performs some usual data collection tasks f
 
 **Packages**
 
-In order for the scripts to run, you need to install some Python packages. These are:
-
-http://docs.tweepy.org/en/v3.5.0/
+In order for the scripts to run, you need to install [Tweepy](http://docs.tweepy.org/en/v3.5.0/).
 
 **Add the Twitter API Keys (required)**
 
