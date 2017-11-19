@@ -25,13 +25,31 @@ Whenever consumerid is mentioned, it is a integer value k that indicates the cre
 
 Gets the historical tweets of a list of users. If given a folder where tweet files of users exists, resumes from the last seen tweet. Suitable for running as a cron job in order to update the tweets at a regular time interval.
 
-        python monitor-users.py userfile consumerid targetfolder
+        python getTweets.py userfile consumerid targetfolder
 
 userfile - file with the list of user ids, one/line (default 'user-file')
 
 consumerid - number of consumer (see installation section)
 
 targetfolder - the target folder name (default 'timelines', creates the folder if it doesn't exist)
+
+#### getTweetsFromId.py
+
+Gets the tweets based on a list of tweet ids.
+
+        python getTweets.py tweetids consumerid 
+
+tweetids - file with the list of tweet ids, one/line
+
+consumerid - number of consumer (see installation section)
+
+Outputs to stdout
+
+#### getReplyId.py
+
+Gets the ids of the tweets that were replied to. 
+
+	cat tweetfile | python getReplyId.py > tweetids
 
 #### pp.py 
 
